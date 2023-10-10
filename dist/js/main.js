@@ -1,10 +1,19 @@
-// navbar
-// const berger = document.querySelector('hamburger');
-// console.log(berger);    
+// TesSOched
+// const socket = new WebSocket('ws:http://127.0.0.1:5502/public/'); // Ganti dengan URL server WebSocket yang sesuai
 
-// berger.addEventListener('click', function(e){
-//     e.target.classList.toggle('hidden');
-// }
+// console.log(socket);
+
+// Koneksi WebSocket pertama
+const socket1 = new WebSocket('ws://127.0.0.1:5500/ML/ws');
+
+// Koneksi WebSocket kedua
+const socket2 = new WebSocket('ws://127.0.0.1:5502/public/');
+
+console.log(socket1);
+console.log(socket2);
+
+
+  
 
 // NAVBAR
 let list = document.querySelector('ul');
